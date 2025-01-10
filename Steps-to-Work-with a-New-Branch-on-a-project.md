@@ -88,8 +88,6 @@ Now,
 Check the remote repository
 * Go to your repository on GitHub and check the main branch to see if the changes from yourNewBranch have been integrated.
 
-key point: first you merge your branch with main on local, then push the merged main to remote
-  
 ### Best Practices
 * Use meaningful branch names (e.g., feature/login-functionality, bugfix/issue-123).
 * Keep your branch up-to-date with the main branch to minimize merge conflicts.
@@ -97,3 +95,8 @@ key point: first you merge your branch with main on local, then push the merged 
 * Push your branch frequently to avoid losing work.
 * Use merge when collaborating with a team, as it preserves the context of branches.
 * Use rebase for private or local branches to clean up the history before sharing it with others.
+
+### Key Summarized points:
+* All the branches you work on locally on your system are local branches in Git.These branches are not visible to others or in the remote repository until you push them.
+* First you create your local branches then after all works, you push your local branches to remote to make them visible to others.
+* After finishing work on local branches, you switch to local main, you merge your local branches with local main, then push the updated local main to remote main on github to reflect change remotely on github.
