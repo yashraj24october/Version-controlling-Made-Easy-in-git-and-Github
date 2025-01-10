@@ -41,26 +41,32 @@ You need to create a Pull Request:
 Now,
 If there are updates on the base branch (e.g., main), you can incorporate them into your branch.
 using:
-git fetch origin
-git checkout main
-git pull
-git checkout newBranchName
-git merge main
+* git fetch origin
+* git checkout main
+* git pull
+* git checkout newBranchName
+* git merge main
 
 Or, rebase instead of merging
 using: 
-git fetch origin
-git checkout main
-git pull
-git checkout newBranchName
-git rebase main
+* git fetch origin
+*git checkout main
+* git pull
+* git checkout newBranchName
+* git rebase main
 
 ### Resolve Merge Conflicts (If Any)
 If there are conflicts, Git will notify you. Resolve them in your editor, stage the changes, and continue
 using:
-git add <your files and directory path seprated with space>
-git rebase --continue  # If rebasing
-git merge --continue   # If merging
+first, 
+* git add your files and directory path seprated with space
+
+now, 
+in case of rebasing,
+* git rebase --continue
+
+in case of merging,
+* git merge --continue
 
 When you are merging branches and Git encounters conflicts, it stops and prompts you to
 resolve the conflicts manually. After resolving the conflicts in the files, Git needs to know
