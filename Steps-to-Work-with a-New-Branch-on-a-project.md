@@ -73,6 +73,23 @@ resolve the conflicts manually. After resolving the conflicts in the files, Git 
 that you've fixed the conflicts and are ready to continue the merge process.
 so, again you need to add your changed files/directories using : git add
 
+### Confirming merge
+After merging your branch to main/anyBranch, to confirm your merge, we can do:
+* git log --oneline
+This will show you the commit history with a merge commit
+
+### After merge your branch on local main, Ensure Your Local main is Up-to-Date
+
+ Now,
+ To reflect the changes on GitHub (remote repository), you need to push the merged main branch, using:
+ * git push origin main
+   
+Now,
+Check the remote repository
+* Go to your repository on GitHub and check the main branch to see if the changes from yourNewBranch have been integrated.
+
+key point: first you merge your branch with main on local, then push the merged main to remote
+  
 ### Best Practices
 * Use meaningful branch names (e.g., feature/login-functionality, bugfix/issue-123).
 * Keep your branch up-to-date with the main branch to minimize merge conflicts.
