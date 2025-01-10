@@ -2,9 +2,15 @@
 ----------------------------------------------
 
 ### Steps:
-* First need to clone the repository.
+* First ensure you are added as collaborator and have write permission to collaborate on project repo
+* If you have not "write" permission, then you need to "fork" the repository.
+* It will create a copy of repo in your github.
+ then 
+* You need to clone the repository.
 
-then 
+If you have "write" permission, you can directly clone the repo.
+
+then,
 
 * Go to main branch if not in main branch, using: git checkout main,
 * You can check your current branch using: git branch
@@ -100,3 +106,16 @@ Check the remote repository
 * All the branches you work on locally on your system are local branches in Git.These branches are not visible to others or in the remote repository until you push them.
 * First you create your local branches then after all works, you push your local branches to remote to make them visible to others.
 * After finishing work on local branches, you switch to local main, you merge your local branches with local main, then push the updated local main to remote main on github to reflect change remotely on github.
+
+
+## Note: For collaborater without having 'write' permission, they cannot merge their local main to remote main directly, they need to follow below steps:
+* Fork the repository to create a copy of it under their GitHub account.
+* Clone their forked repository to their local machine.
+* Make changes and push them to their fork.
+* Create a pull request from their fork to the original repository to propose the changes.
+
+For creating a pull request:
+they can go to the GitHub page of their forked repository (not the original repository).
+From there, they can create a pull request to propose merging their changes from their fork into the original repository's main branch (or any other branch they're working with).
+After that the repo owner will review and merge their changes.
+
